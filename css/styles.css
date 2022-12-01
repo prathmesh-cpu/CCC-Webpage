@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-family: 'Merriweather', serif;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #B5D4FF;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Logo & Navigation */
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    height: 5.1875rem;
+    background-color: #003140;
+    width: 100%;
+    z-index: 3;
+}
+
+.logo {
+    width: 5rem;
+    margin: 0 100px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0;
+}
+
+nav ul li a {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 2rem 2rem;
+    text-transform: uppercase;
+}
+
+a.active {
+    background-color: #07191f;
+    color: #ffffff;
+
+}
+
+li>a:hover:not(.active) {
+    background-color: #2a4a54;
+    transform: .5s;
+    color: #ffffff;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #ffffff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #07191f;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        z-index: 3;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    a.active {
+        background: none;
+        color: #68a9ff;
+    }
+
+    li>a:hover:not(.active) {
+        background: none;
+        color: #68a9ff;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+
+    .logo {
+        margin: 0 30px;
+    }
+
+}
+
+/* Logo & Navigation */
+
+/* 
+.mynavbar {
+    height: 5.1875rem;
+    background-color: #003140;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    width: 6rem;
+    position: absolute;
+    margin: -10px 0 0 5.51rem;
+    filter: brightness(108%);
+}
+
+.mynav-list {
+    list-style-type: none;
+    position: absolute;
+    right: 7.3rem;
+}
+
+.active {
+    background-color: #07191f;
+}
+
+.mynav-item {
+    float: left;
+    padding: 5% 2rem;
+    font-weight: 100;
+
+} 
+
+a li:hover:not(.active) {
+    background-color: #2a4a54;
+} */
+
+/* Main Container */
+
+.main-container {
+    position: relative;
+    height: 34rem;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.main-text {
+    position: absolute;
+    top: 6.7rem;
+    left: 3rem;
+    width: 31.25em;
+    text-align: center;
+    z-index: 1;
+}
+
+.title-img {
+    width: 150px;
+}
+
+.sub-title {
+    color: #560505;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    margin-top: 10px;
+}
+
+.slogan {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    color: #560505;
+    position: relative;
+    margin-top: 35px;
+}
+
+.slogan-1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #560505;
+    position: relative;
+    margin-top: 35px;
+    display: none;
+}
+
+/* Typewriter */
+.typewriter .slogan {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation:
+        typing 4s steps(40, end) alternate infinite,
+        blink-caret .5s step-end alternate infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+
+.contact {
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #0b333f;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.contact:hover {
+    background-color: #072832;
+    color: #ffffff;
+}
+
+.comp-img {
+    position: absolute;
+    right: -55px;
+    height: 548px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1205px) {
+
+    .main-container {
+        height: 50rem;
+    }
+
+    .comp-img {
+        width: 90%;
+        height: auto;
+        bottom: 0;
+    }
+
+    .main-text {
+        top: 3rem;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .main-text {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 3rem;
+        left: 0rem;
+    }
+
+}
+
+@media screen and (max-width: 535px) {
+
+    .main-container {
+        height: 45rem;
+    }
+
+    .main-text {
+        margin-top: 20px;
+        width: 100vw;
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .comp-img {
+        width: 120%;
+    }
+
+    .title-img {
+        width: 150px;
+    }
+
+    .sub-title {
+        font-size: 0.9rem;
+    }
+
+    .typewriter {
+        display: none;
+    }
+
+    .slogan-1 {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .main-container {
+        height: 40rem;
+    }
+}
+
+/* Arrow Up */
+.top-arrow {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    color: #ffffff;
+    text-align: center;
+    z-index: 2;
+    font-size: 20px;
+    bottom: 10px;
+    right: 25px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: #07191f;
+}
+
+.top-arrow:hover {
+    background-color: #000000;
+}
+
+/* Slidebar */
+
+hr {
+    height: 6px;
+    background-color: #003140;
+    opacity: 1;
+    margin: 0;
+    border: 0;
+    outline: 0;
+}
+
+.gallery {
+    height: 35.2rem;
+}
+
+.gallery-head {
+    text-align: center;
+    margin: 50px 0 50px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 3.125rem;
+    color: #072832;
+}
+
+.carousel-item {
+    background-color: #ffffff;
+}
+
+/* About Us */
+
+.about {
+    height: 38.4rem;
+    text-align: center;
+    background-color: #003140;
+    color: #ffffff;
+}
+
+.about-head {
+    text-align: center;
+    margin: 0 0 80px 0;
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.125rem;
+}
+
+.about-body {
+    font-size: 40px;
+}
+
+.about-des {
+    font-size: 18px;
+}
+
+.features {
+    padding: 0 2%;
+}
+
+.feature-box {
+    padding: 3%;
+}
+
+.icon {
+    color: #59C1BD;
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: #1defe8;
+}
+
+/* Our Team */
+
+.team-head {
+    text-align: center;
+    margin: 30px 0 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 3.125rem;
+    color: #072832;
+}
+
+.team-img {
+    width: 150px;
+}
+
+.team-role {
+    text-align: center;
+    margin: 0 0 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 2.1875rem;
+    color: #072832;
+}
+
+.image-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+}
+
+.image-item {
+    width: 300px;
+    text-align: center;
+    margin: 50px 30px 0;
+    padding: 0 20px 90px 20px;
+}
+
+.team-body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    color: #000000;
+}
+
+.social-icon:hover {
+    color: #024daf;
+}
+
+.team-line {
+    height: 1px;
+    width: 70vw;
+    display: block;
+    background-color: #003140;
+    opacity: 0.5;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/* Footer */
+
+.footer {
+    height: 15rem;
+    padding: 1.5% 0;
+    text-align: center;
+    background-color: #003140;
+    color: #ffffff;
+    position: relative;
+}
+
+.social-logo {
+    font-size: 1.8rem;
+    position: relative;
+    top: 50px;
+    margin: 0 2rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.social-logo:hover {
+    transform: scale(1.3);
+    color: #1defe8;
+}
+
+.contact-address {
+    font-size: 15px;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.copyright>span{
+    color: #ff0000;
+}
+/* Media Queries */
+
+@media screen and (max-width:992px) {
+
+    .gallery {
+        height: 30rem;
+    }
+
+    .about {
+        height: 67rem;
+    }
+
+    .about-head {
+        margin: 0 0 50px 0;
+    }
+
+    .feature-box {
+        margin-bottom: 30px;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .contact-address {
+        bottom: 75px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    .gallery {
+        height: 25rem;
+    }
+
+    .team-head,
+    .gallery-head {
+        margin: 50px 0 80px 0;
+        font-size: 3.125rem;
+    }
+
+    .image-container {
+        grid-template-columns: auto;
+    }
+
+    .social {
+        margin-top: -35px;
+    }
+
+    .social-logo {
+        font-size: 1.6rem;
+        margin: 0 1rem;
+    }
+
+    .contact-address,
+    .copyright {
+        font-size: 15px;
+    }
+
+    .contact-address {
+        bottom: 100px;
+    }
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cd1b3c60ee.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/favicon.ico">
+    <title>Competitive Coding Club</title>
+</head>
+
+<body>
+
+    <!-- <nav>
+        <div class="mynavbar" id="top">
+            <a href=""><img class="logo" src="images/CCC-logo.png" alt="CCC-logo-img"></a>
+            <ul class="mynav-list">
+                    <a href="">
+                        <li class="active mynav-item">Home</li>
+                    </a>
+                    <a href="#gallery">
+                        <li class="mynav-item">Gallery</li>
+                    </a>
+                    <a href="#about">
+                        <li class="mynav-item">About</li>
+                    </a>
+                    <a href="#team">
+                        <li class="mynav-item">Team</li>
+                    </a>
+                    <a href="#contact">
+                        <li class="mynav-item">Contact</li>
+                    </a>
+            </ul>
+        </div>
+    </nav> -->
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label>
+            <a href="">
+                <img class="logo" src="images/CCC-logo.png" alt="CCC-logo-img">
+            </a>
+        </label>
+
+        <ul>
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <section>
+
+
+        <div class="main-container">
+            <div class="main-text">
+                <img class="title-img" src="images/CCC_Logo.png" alt="CCC-logo">
+                <p class="sub-title">The <strong><i> Competitive Coding Club </i></strong> of RSCOE</p>
+                <div class="typewriter">
+                    <h1 class="slogan">Learn, Code and Grow Together...</h1>
+                </div>
+                <h1 class="slogan-1">Learn, Code and Grow Together...</h1>
+                <a class="contact" href="mailto:competitivecodingclub@gmail.com">CONTACT US</a>
+            </div>
+            <img class="comp-img" src="images/comp.gif" alt="comp-img">
+        </div>
+        <a href="#top" title="Go to Top">
+            <div class="top-arrow">
+                <i class="fa-solid fa-arrow-up"></i>
+            </div>
+        </a>
+        <hr class="hr-1">
+
+        <div id="gallery" class="gallery">
+            <h1 class="gallery-head">Gallery</h1>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/6.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/7.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/8.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/9.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/10.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="about" class="about">
+            <h1 class="about-head">About Us</h1>
+            <div class="features">
+                <div class="row">
+                    <div class="feature-box col-lg-4">
+                        <i class="icon fa-solid fa-eye fa-4x"></i>
+                        <h3 class="about-body">Vision</h3>
+                        <p class="about-des">To improve the ability of students to implement algorithms and problem
+                            solving skills.</p>
+                    </div>
+                    <div class="feature-box col-lg-4">
+                        <!-- <i class="icon fa-solid fa-bullseye fa-4x"></i> -->
+                        <i class="icon fa-solid fa-bullseye fa-4x"></i>
+                        <h3 class="about-body">Mission</h3>
+                        <p class="about-des">We organise Programming Contests to prepare students for
+                            events like ACM ICPC and Google Kickstart.</p>
+                    </div>
+                    <div class="feature-box col-lg-4">
+                        <i class="icon fa-solid fa-trophy fa-4x"></i>
+                        <h3 class="about-body">Goal</h3>
+                        <p class="about-des">To increase the participation and performance of students at codechef,
+                            codeforces and other coding platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="team" class="team">
+            <div class="team-head">Team</div>
+            <div class="team-role">Coordinators</div>
+            <div class="image-container">
+                <div class="image-item">
+                    <img class="team-img" src="images/Aniket-Pres.png" alt="Aniket-img" style="text-align: center;">
+                    <h4 class="team-body">Aniket Labade</h4>
+                    <a href="https://www.linkedin.com/in/aniket-labade-893b94226/">
+                        <i class="social-icon fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="">
+                        <i class="social-icon fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <div class="image-item">
+                    <img class="team-img" src="images/Prathmesh-modified1.png" alt="Prathmesh-img">
+                    <h4 class="team-body">Prathamesh Dhavale</h4>
+                    <a href="https://www.linkedin.com/in/prathamesh-dhavale-2224b3197">
+                        <i class="social-icon fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/prathmesh-cpu">
+                        <i class="social-icon fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <hr class="team-line">
+            <div class="team-role">Secretary & Teasurer</div>
+            <div class="image-container">
+                <div class="image-item">
+                    <img class="team-img" src="images/Mahesh-Sec.png" alt="Parth-img">
+                    <h4 class="team-body">Mahesh Patil</h4>
+                    <a href="https://www.linkedin.com/in/mahesh-patil-14437022a/">
+                        <i class="social-icon fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="">
+                        <i class="social-icon fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <div class="image-item">
+                    <img class="team-img" src="images/Maroti-Tr.png" alt="Maroti-img">
+                    <h4 class="team-body">Maroti Patre</h4>
+                    <a href="https://www.linkedin.com/in/maroti-patre-180907217/">
+                        <i class="social-icon fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="">
+                        <i class="social-icon fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <hr class="team-line">
+            <div class="team-role">Event Head & Social Head</div>
+            <div class="image-container">
+                <div class="image-item">
+                    <img class="team-img" src="images/Vedant-EH.png" alt="Vedant-img">
+                    <h4 class="team-body">Vedant Patil</h4>
+                    <a href="https://www.linkedin.com/in/vedant-patil-9b9828190/">
+                        <i class="social-icon fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="">
+                        <i class="social-icon fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <div class="image-item">
+                    <img class="team-img" src="images/Ayan-SH.png" alt="Ayan-img">
+                    <h4 class="team-body">Ayan Sayyad</h4>
+                    <a href="https://www.linkedin.com/in/ayan-sayyad-440861224/">
+                        <i class="social-icon fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="">
+                        <i class="social-icon fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <hr class="team-line">
+            <div class="team-role">Public Relation</div>
+            <div class="image-container">
+                <div class="image-item">
+                    <img class="team-img" src="images/Parth-PR.png" alt="Mahesh-img">
+                    <h4 class="team-body">Parth Sonar</h4>
+                    <a href="https://www.linkedin.com/in/parth-s-26b278224/">
+                        <i class="social-icon fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="">
+                        <i class="social-icon fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <div class="image-item">
+                    <img class="team-img" src="images/Sanika-PR.png" alt="Sanika-img">
+                    <h4 class="team-body">Sanika Lewarkar</h4>
+                    <a href="https://www.linkedin.com/in/sanika-lewarkar-731b16229/">
+                        <i class="social-icon fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="">
+                        <i class="social-icon fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <hr class="team-line">
+            <div class="team-role">Creative Head</div>
+            <div class="image-container">
+                <div class="image-item">
+                    <img class="team-img" src="images/Pranav-CH.png" alt="Pranav-img">
+                    <h4 class="team-body">Pranav Bari</h4>
+                    <a href="https://www.linkedin.com/in/pranav-bari-5a4156200/">
+                        <i class="social-icon fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="">
+                        <i class="social-icon fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <div class="image-item">
+                    <img class="team-img" src="images/Manish-CH.png" alt="Manish-img">
+                    <h4 class="team-body">Manish Gaikwad</h4>
+                    <a href="">
+                        <i class="social-icon fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="">
+                        <i class="social-icon fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <footer>
+        <div class="footer" id="contact">
+            <div class="social">
+                <a href="https://www.linkedin.com/company/competitivecoding-club/">
+                    <i class="social-logo fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/competitive_coding_club/">
+                    <i class="social-logo fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://discord.com/invite/FeqNTHt8">
+                    <i class="social-logo fa-brands fa-discord"></i>
+                </a>
+                <a href="mailto:competitivecodingclub@gmail.com">
+                    <i class="social-logo fa-solid fa-envelope"></i>
+                </a>
+            </div>
+            <p class="contact-address">JSPM's Rajarshi Shahu College of Engineering, Tathawade (Pune) - 411033</p>
+            <p class="copyright">© 2022 CCC - JSPM's RSCOE All Right Reserved. <br> <span>❤</span> by Prathamesh Dhavale
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
